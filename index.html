@@ -1,80 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
-
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
+    <meta charset="UTF-8">
+    <title>MT7630E by neurobin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-<base href="https://github.com/neurobin/">
-    <title>MT7630E</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
+    <section class="page-header">
+      <h1 class="project-name">MT7630E</h1>
+      <h2 class="project-tagline">Modified easy installation package</h2>
+      <a href="https://github.com/neurobin/MT7630E" class="btn">View on GitHub</a>
+      <a href="https://github.com/neurobin/MT7630E/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/neurobin/MT7630E/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <header>
-      <div class="container">
-        <h1>MT7630E</h1>
-        <h2>Modified easy installation package</h2>
+    <section class="main-content">
+      <h1>
+<a id="mt7630e" class="anchor" href="#mt7630e" aria-hidden="true"><span class="octicon octicon-link"></span></a>MT7630E</h1>
 
-        <section id="downloads">
-          <a href="MT7630E/archive/release.zip" class="btn">Download as .zip</a>
-          <a href="MT7630E/archive//release.tar.gz" class="btn">Download as .tar.gz</a>
-          <a href="MT7630E" class="btn btn-github"><span class="icon"></span>Find on GitHub</a>
-        </section>
-      </div>
-    </header>
+<p>Easy installation package for the official driver at <a href="http://www.mediatek.com/en/downloads/mt7630-pcie/">http://www.mediatek.com/en/downloads/mt7630-pcie/</a></p>
 
-    <div class="container">
-      <section id="main_content">
-        <h1>
-<a name="welcome-to-my-personal-repository" class="anchor" href="#welcome-to-my-personal-repository"><span class="octicon octicon-link"></span></a>Welcome to My Personal Repository</h1>
+<hr>
 
-<p>This package is for public use and released under GPL v2 license. You can use it or redustribute it under the licensing terms of GPL v2 license agreement.</p>
-
-<h2>
-<a name="component" class="anchor" href="#component"><span class="octicon octicon-link"></span></a>Component</h2>
-
-<pre><code>rt2x00: Wi-Fi driver source code
-btloader: Bluetooth firmware loader source code
-firmware: Firmware binary code (MT7650E234.bin is for Wi-Fi, mt76x0.bin is for Bluetooth)
+<pre><code>                              Mediatek MT7630E Combo Linux Driver User Guide
 </code></pre>
 
-<h2>
-<a name="user-environment" class="anchor" href="#user-environment"><span class="octicon octicon-link"></span></a>User Environment</h2>
-
-<pre><code>OS version: Ubuntu 14.04 LTS / Linux Mint 17 LTS
-Linux kernel version: 3.13 and 3.14
-</code></pre>
+<hr>
 
 <h2>
-<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+<a id="1-component" class="anchor" href="#1-component" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. Component</h2>
 
-<p>Give the install.sh file execution permission and run it in terminal :</p>
+<ul>
+<li>rt2x00: Wi-Fi driver source code</li>
+<li>btloader: Bluetooth firmware loader source code</li>
+<li><p>firmware: Firmware binary code (MT7650E234.bin is for Wi-Fi, mt76x0.bin is for Bluetooth)</p></li>
+</ul>
 
-<pre><code>./install.sh
+<h2>
+<a id="2-installation" class="anchor" href="#2-installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. Installation</h2>
+
+<p>First give some file execution permission:</p>
+
+<pre><code> chmod +x install test uninstall
 </code></pre>
 
-<p>Put your password and wait to finish the process</p>
+<p>Now to install it, run:</p>
 
-<p>The driver will automatically load at startup.... </p><br>
-<p>The official source package can be found <a href="http://www.mediatek.com/en/downloads/mt7630-pcie/">here</a></p>
-      </section>
-      <h3> <a href="https://www.facebook.com/pages/JCode/1513497505602572"><font color="#1a1ad2">Find
-On Facebook</font></a></h3>
-    </div><br>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- autoadd -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-7231056961514186"
-     data-ad-slot="4317042955"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-    
+<pre><code> ./install
+</code></pre>
+
+<p>To test it without installing, run:</p>
+
+<pre><code> ./test
+</code></pre>
+
+<p>To uninstall, run:</p>
+
+<pre><code>  ./uninstall
+</code></pre>
+
+<p>The driver will automatically load at startup.... </p>
+
+<h2>
+<a id="source" class="anchor" href="#source" aria-hidden="true"><span class="octicon octicon-link"></span></a>Source:</h2>
+
+<pre><code>  This copy of driver was taken from https://github.com/kuba-moo/mt7630e
+</code></pre>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/neurobin/MT7630E">MT7630E</a> is maintained by <a href="https://github.com/neurobin">neurobin</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
   </body>
 </html>
+
